@@ -4,22 +4,32 @@ import './App.scss'
 
 const img_success = "https://media.giphy.com/media/gixQfE7XzZfpe/giphy.gif"
 const img_fail = "https://media.giphy.com/media/QBGe6zi0O1aaWxeR8i/giphy.gif"
+const img_countdown = "https://thumbs.gfycat.com/DismalWhisperedEastsiberianlaika-small.gif"
+
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
 
 function coinFlip() {
-    return (Math.floor(Math.random() * 2) === 0) ? "heads" : "tails";
+  return (Math.floor(Math.random() * 2) === 0) ? "heads" : "tails";
 }
 
 class GameImage extends React.Component {
   render() {
     return (
       <div>
+        <div className="img-text">
+          <span 
+            className={`h1 center-block text-center`} 
+            style={{ marginBottom: 25, fontSize: 60, fontFamily: "Courier New", fontWeight: "bolder" }}>{this.props.value}
+          </span>
+        </div>
         <img 
           src={ this.props.img_display }
           width={ 200 }
           height={ 200 }
           className="center-block text-center"
-          marginBottom={ 25 }
-          alt=''
+          vspace={ 10 }
         />
       </div>
     )
@@ -58,10 +68,19 @@ class Game extends React.Component {
     if (coin_flip_result === "heads") {
       this.setState({number_of_heads: this.state.number_of_heads + 1})
       this.setState({img_display: img_success})
+      this.setState({value: "STOLEN!"})
     } else {
       this.setState({number_of_tails: this.state.number_of_tails + 1})
       this.setState({img_display: img_fail})
+      this.setState({value: "SAFE!"})
     }
+  }
+
+  async countDown() {
+    this.setState({img_display: img_countdown})
+    this.setState({value: "This gift is..."})
+    await sleep(3000);
+    this.handleClick();
   }
   
   render() {
@@ -94,17 +113,17 @@ class Game extends React.Component {
           </div>
           <div className="center-block text-center">
             <GameButton
-              onClick={() => this.handleClick()}
+              onClick={() => this.countDown()}
             />
           </div>
           <div className="status">
             <span className={`h3 center-block text-center`}>{"Status"}</span>
           </div>
           <div className="number-of-heads">
-            <span className={`h4 center-block text-center`} style={{ marginBottom: 25 }}>{"Number of heads: " + this.state.number_of_heads}</span>
+            <span className={`h4 center-block text-center`} style={{ marginBottom: 25 }}>{"Number of Stolen Gifts: " + this.state.number_of_heads}</span>
           </div>
           <div className="number-of-tails">
-            <span className={`h4 center-block text-center`} style={{ marginBottom: 25 }}>{"Number of tails: " + this.state.number_of_tails}</span>
+            <span className={`h4 center-block text-center`} style={{ marginBottom: 25 }}>{"Number of Safe Gifts: " + this.state.number_of_tails}</span>
           </div>
         </div>
           
