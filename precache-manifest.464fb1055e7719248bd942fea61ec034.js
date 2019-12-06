@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2d7f5bb5cdb081fc52cd38147217ee97",
+    "revision": "39605ce94fd75292bb07c0b718121bfd",
     "url": "/white-elephant/index.html"
   },
   {
-    "revision": "b9e097888d57571795f3",
+    "revision": "658eab8a75537ed99122",
     "url": "/white-elephant/static/css/2.7bbceaae.chunk.css"
   },
   {
-    "revision": "e8d9c01f0de6fc249276",
-    "url": "/white-elephant/static/css/main.87cd0072.chunk.css"
+    "revision": "52ed940877b761776270",
+    "url": "/white-elephant/static/css/main.8ce4d518.chunk.css"
   },
   {
-    "revision": "b9e097888d57571795f3",
-    "url": "/white-elephant/static/js/2.d0b76a33.chunk.js"
+    "revision": "658eab8a75537ed99122",
+    "url": "/white-elephant/static/js/2.d95027f2.chunk.js"
   },
   {
-    "revision": "e8d9c01f0de6fc249276",
-    "url": "/white-elephant/static/js/main.748dc4ad.chunk.js"
+    "revision": "52ed940877b761776270",
+    "url": "/white-elephant/static/js/main.c09d32c9.chunk.js"
   },
   {
     "revision": "a34af9bd8d6753663d30",
