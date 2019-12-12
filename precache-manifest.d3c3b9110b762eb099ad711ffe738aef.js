@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "39605ce94fd75292bb07c0b718121bfd",
+    "revision": "a0cd818084041bb22fc740442b692d54",
     "url": "/white-elephant/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/white-elephant/static/css/2.7bbceaae.chunk.css"
   },
   {
-    "revision": "52ed940877b761776270",
+    "revision": "510df606bc7243bea765",
     "url": "/white-elephant/static/css/main.8ce4d518.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/white-elephant/static/js/2.d95027f2.chunk.js"
   },
   {
-    "revision": "52ed940877b761776270",
-    "url": "/white-elephant/static/js/main.c09d32c9.chunk.js"
+    "revision": "510df606bc7243bea765",
+    "url": "/white-elephant/static/js/main.a7b78695.chunk.js"
   },
   {
     "revision": "a34af9bd8d6753663d30",

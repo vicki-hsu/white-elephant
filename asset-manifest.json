@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/white-elephant/static/css/main.8ce4d518.chunk.css",
-    "main.js": "/white-elephant/static/js/main.c09d32c9.chunk.js",
-    "main.js.map": "/white-elephant/static/js/main.c09d32c9.chunk.js.map",
+    "main.js": "/white-elephant/static/js/main.a7b78695.chunk.js",
+    "main.js.map": "/white-elephant/static/js/main.a7b78695.chunk.js.map",
     "runtime-main.js": "/white-elephant/static/js/runtime-main.293b8503.js",
     "runtime-main.js.map": "/white-elephant/static/js/runtime-main.293b8503.js.map",
     "static/css/2.7bbceaae.chunk.css": "/white-elephant/static/css/2.7bbceaae.chunk.css",
     "static/js/2.d95027f2.chunk.js": "/white-elephant/static/js/2.d95027f2.chunk.js",
     "static/js/2.d95027f2.chunk.js.map": "/white-elephant/static/js/2.d95027f2.chunk.js.map",
     "index.html": "/white-elephant/index.html",
-    "precache-manifest.464fb1055e7719248bd942fea61ec034.js": "/white-elephant/precache-manifest.464fb1055e7719248bd942fea61ec034.js",
+    "precache-manifest.d3c3b9110b762eb099ad711ffe738aef.js": "/white-elephant/precache-manifest.d3c3b9110b762eb099ad711ffe738aef.js",
     "service-worker.js": "/white-elephant/service-worker.js",
     "static/css/2.7bbceaae.chunk.css.map": "/white-elephant/static/css/2.7bbceaae.chunk.css.map",
     "static/css/main.8ce4d518.chunk.css.map": "/white-elephant/static/css/main.8ce4d518.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.7bbceaae.chunk.css",
     "static/js/2.d95027f2.chunk.js",
     "static/css/main.8ce4d518.chunk.css",
-    "static/js/main.c09d32c9.chunk.js"
+    "static/js/main.a7b78695.chunk.js"
   ]
 }
