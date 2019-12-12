@@ -127,10 +127,10 @@ class Game extends React.Component {
             <span className={`h3 center-block text-center`}>{"Status"}</span>
           </div>
           <div className="number-of-heads">
-            <span className={`h4 center-block text-center`} style={{ marginBottom: 25 }}>{"Number of Stolen Gifts: " + this.state.number_of_heads}</span>
+            <span className={`h2 center-block text-center`} style={{ marginBottom: 25 }}>{"Number of Stolen Gifts: " + this.state.number_of_heads}</span>
           </div>
           <div className="number-of-tails">
-            <span className={`h4 center-block text-center`} style={{ marginBottom: 25 }}>{"Number of Safe Gifts: " + this.state.number_of_tails}</span>
+            <span className={`h2 center-block text-center`} style={{ marginBottom: 25 }}>{"Number of Safe Gifts: " + this.state.number_of_tails}</span>
           </div>
         </div>
 
