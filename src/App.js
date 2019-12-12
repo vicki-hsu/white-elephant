@@ -26,15 +26,15 @@ class GameImage extends React.Component {
     return (
       <div>
         <div className="img-text">
-          <span 
-            className={`h1 center-block text-center`} 
+          <span
+            className={`h1 center-block text-center`}
             style={{ marginBottom: 25, fontSize: 60, fontFamily: "Courier New", fontWeight: "bolder" }}>{this.props.value}
           </span>
         </div>
-        <img 
+        <img
           src={ this.props.img_display }
-          width={ 200 }
-          height={ 200 }
+          width={ 600 }
+          height={ 600 }
           className="center-block text-center"
           vspace={ 10 }
         />
@@ -46,8 +46,8 @@ class GameImage extends React.Component {
 class GameButton extends React.Component {
   render() {
     return (
-      <Button 
-        variant="success" 
+      <Button
+        variant="success"
         size="lg"
         onClick={this.props.onClick}
       >
@@ -89,16 +89,16 @@ class Game extends React.Component {
     await sleep(3000);
     this.handleClick();
   }
-  
+
   render() {
-  
+
     const parentContainerStyles = {
       position: 'absolute',
       height: '100%',
       width: '100%',
       display: 'table'
     };
-    
+
     const subContainerStyles = {
       position: 'relative',
       height: '100%',
@@ -106,11 +106,11 @@ class Game extends React.Component {
       display: 'table-cell',
       verticalAlign: 'middle'
     };
-    
+
     return (
       <div style={parentContainerStyles}>
         <div style={subContainerStyles}>
-        
+
         <div className="game">
           <div className="game-image">
             <GameImage
@@ -145,7 +145,7 @@ class Game extends React.Component {
                 <AccordionItemPanel>
                     <p><b>Starting with Player #1, they either: </b></p>
                     <p><b>a) Pick from The Pool of gifts and opens, or </b></p>
-                    <p><b>b) Challenge to steal a non-stolen gift from another Player.</b></p>  
+                    <p><b>b) Challenge to steal a non-stolen gift from another Player.</b></p>
                     <p><b>(Note: with the first person, their only option is (a), but starting with #2 and beyond, both (a) and (b) are valid options.)</b></p>
 
                     <p><b>If the Player challenges, then the person with the gift can either freely give it to the Player, or can enter into the challenge, in which case the success of the steal is determined by a coin flip.  If the gift is successfully stolen, then that gift is labeled "stolen" for that round (i.e., it can no longer be challenged for that round). </b></p>
@@ -165,11 +165,11 @@ class Game extends React.Component {
                 </AccordionItemHeading>
                 <AccordionItemPanel>
                     <p>
-                      <span 
+                      <span
                         className={`center-block text-center`}
                         style={{ marginBottom: 25, fontSize: 32, fontFamily: "Courier New", fontWeight: "bolder" }}>{"EVERYBODY! HAPPY HOLIDAYS!!!"}
                       </span>
-                      <img 
+                      <img
                         src="https://media.giphy.com/media/9w475hDWEPVlu/giphy.gif"
                         width={ 200 }
                         height={ 200 }
@@ -180,13 +180,13 @@ class Game extends React.Component {
             </AccordionItem>
         </Accordion>
         </div>
-          
+
         </div>
       </div>
     );
-    
+
   }
-  
+
 }
 
 export default Game;
